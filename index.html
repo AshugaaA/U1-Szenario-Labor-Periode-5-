@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="U1 Planspiel: Periodenanalyse, Entscheidungen und nachvollziehbare Szenarien aus den Projektunterlagen.">
+  <title>U1 · Planspiel Cockpit</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script><script src="model.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#content">Zum Inhalt</a>
+  <aside class="sidebar">
+    <a class="brand" href="#overview"><span class="brand-mark">U1<span></span></span><span>PLANSPIEL<span class="brand-small">Management Cockpit</span></span></a>
+    <div class="nav-label">ARBEITSBEREICH</div>
+    <nav id="navigation" aria-label="Hauptnavigation"></nav>
+    <div class="sidebar-bottom"><span class="status-dot"></span> Lokal & offline<div>Deine Szenarien bleiben<br>in diesem Browser.</div><button id="help-button" class="sidebar-help">Wie lese ich das Dashboard? ↗</button></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><div class="breadcrumb">Vallenberg Outdoor <span>/</span> Unternehmen 1</div><div class="top-actions"><label for="period-select" class="sr-only">Auswertungsperiode</label><select id="period-select"></select><button class="button" id="export-button"><span aria-hidden="true">↓</span> Szenario exportieren</button></div></header>
+    <main id="content" tabindex="-1"></main>
+    <footer class="footer"><span id="data-status"></span><span>Quellenbasiert · Annahmen sichtbar · Keine TOPSIM-Prognose</span></footer>
+  </div>
+  <dialog id="detail-dialog"><div class="dialog-top"><span class="eyebrow" id="dialog-kicker">DETAILANSICHT</span><button id="close-dialog" aria-label="Detailansicht schließen" class="icon-button">×</button></div><h2 id="dialog-title"></h2><div id="dialog-body"></div></dialog>
+  <div id="tooltip" role="tooltip" hidden></div><div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
